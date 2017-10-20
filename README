@@ -1,1 +1,1 @@
-python build/gn_run_binary.py out/Release/clang_x64/domain_security_preload_generator net/http/transport_security_state_static.json net/http/transport_security_state_static.pins net/http/transport_security_state_static.template out/Release/gen/net/http/transport_security_state_static.h
+依赖chromium 的base crpto borringssl  fuck。。。。

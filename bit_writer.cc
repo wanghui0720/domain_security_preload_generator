@@ -2,9 +2,8 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#include "net/tools/domain_security_preload_generator/bit_writer.h"
+#include "bit_writer.h"
 
-#include "base/logging.h"
 
 namespace net {
 
@@ -15,7 +14,6 @@ BitWriter::BitWriter() {}
 BitWriter::~BitWriter() {}
 
 void BitWriter::WriteBits(uint32_t bits, uint8_t number_of_bits) {
-  DCHECK(number_of_bits <= 32);
   for (uint8_t i = 1; i <= number_of_bits; i++) {
     uint8_t bit = 1 & (bits >> (number_of_bits - i));
     WriteBit(bit);
